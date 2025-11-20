@@ -21,24 +21,18 @@ PATH="/usr/sbin:$PATH"
 PATH="/bin:$PATH"
 PATH="/usr/bin:$PATH"
 PATH="/usr/local/bin:$PATH"
-PATH="/opt/homebrew/sbin:$PATH"
-PATH="/opt/homebrew/bin:$PATH"
-
-PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
-PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-PATH="/opt/homebrew/opt/rustup/bin:$PATH"
-
 PATH="${HOME}/.elan/bin:$PATH"
 PATH="${HOME}/.local/bin:$PATH"
-PATH="${HOME}/.nodebrew/current/bin:$PATH"
 PATH="${HOME}/.ghcup/bin:$PATH"
 PATH="${HOME}/.nix-profile/bin:$PATH"
 
 PATH="${HOME}/Library/Android/sdk/tools/bin:$PATH"
 PATH="${HOME}/Library/Android/sdk/platform-tools:$PATH"
 PATH="${HOME}/script:$PATH"
+PATH="/snap/bin:$PATH"
+PATH="$HOME/anaconda3/bin:$PATH"
+PATH=$PATH:/opt/gradle/gradle-8.10.2/bin
+PATH="$PATH:$HOME/neovim/bin"
 
 PATH="/run/current-system/sw/bin:$PATH"
 PATH="/nix/var/nix/profiles/default/bin:$PATH"
