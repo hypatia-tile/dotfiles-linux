@@ -36,28 +36,8 @@ autoload -Uz gitutils && gitutils
 export EDITOR=nvim
 eval "$(direnv hook zsh)"
 
-
-# TODO: Move functions to a separate module file later
-function take_note () {
-  local note_dir="$HOME/work/notes/diary"
-  local note_file="$note_dir/$(date +"note%Y%m%d.adoc")"
-  if [ ! -d $note_dir ]; then
-    echo "Note dir did not exist!"
-    return 1
-  elif [ ! -f "$note_file" ]; then
-    echo "Note file $note_file did not exist! create is?(y/N)"
-    read yorn
-    case "$yorn" in
-      y|y)
-        touch "$note_file"
-        nvim "$note_file"
-        ;;
-      *)
-        return 0
-    esac
-  else
-    nvim "$note_file"
-  fi
-}
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias zsh_rc_loaded='echo "zsh_rc_loaded"'
