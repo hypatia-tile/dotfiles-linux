@@ -25,6 +25,7 @@ PATH="${HOME}/.elan/bin:$PATH"
 PATH="${HOME}/.local/bin:$PATH"
 PATH="${HOME}/.ghcup/bin:$PATH"
 PATH="${HOME}/.nix-profile/bin:$PATH"
+PATH="${HOME}/.cargo/bin:$PATH"
 
 PATH="${HOME}/Library/Android/sdk/tools/bin:$PATH"
 PATH="${HOME}/Library/Android/sdk/platform-tools:$PATH"
