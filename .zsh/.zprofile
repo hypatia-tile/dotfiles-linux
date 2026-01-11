@@ -50,9 +50,6 @@ add_stack_compiler_bin_to_path() {
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
 
-PROMPT="%F{green}%n%f@%F{blue}%m%f:%F{yellow}%~%f$ "
-RPROMPT="%F{red}%t%f"
-
 echo "read .zprofile from ${HOME}/.zsh"
 #######################
 # Mark as loaded file #
