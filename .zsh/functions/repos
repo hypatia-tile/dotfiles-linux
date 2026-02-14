@@ -1,0 +1,4 @@
+function repos() {
+  local dest=$(ghq list --full-path | fzf)
+  cd $dest
+}

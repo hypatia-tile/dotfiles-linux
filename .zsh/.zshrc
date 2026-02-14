@@ -1,3 +1,6 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":$ZDOTDIR/completions:"* ]]; then export FPATH="$ZDOTDIR/completions:$FPATH"; fi
+FPATH="$ZDOTDIR/functions:$FPATH"
 #!/usr/bin/env zsh
 
 
@@ -32,6 +35,7 @@ zstyle ':vcs_info:git:*' formats '%b'
 
 # Autoload user defined completion functions
 autoload -Uz gitutils && gitutils
+autoload -Uz repos
 
 export EDITOR=nvim
 eval "$(direnv hook zsh)"
@@ -44,3 +48,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias zsh_rc_loaded='echo "zsh_rc_loaded"'
+. "/home/k-shinohara/.deno/env"
