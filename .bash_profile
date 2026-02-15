@@ -19,3 +19,4 @@ export PATH="$PATH:$HOME/neovim/bin"
 alias bash_profile_loaded='echo "bash_profile_loaded"'
 export PATH="$HOME/.elan/bin:$PATH"
 . "$HOME/.cargo/env"
+. "$HOME/.deno/env"
